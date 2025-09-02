@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Museo Sans Cyril 500 Regular", sans-serif;
+  color: $gray1;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 56px;
+  width: 483px;
+  height: 140px;
+  line-height: 66px;
+  letter-spacing: 0;
+}
+
+.title--h2 {
+  background: rgba(98, 72, 255, 0.1);
+}
+

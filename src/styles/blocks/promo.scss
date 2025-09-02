@@ -1,0 +1,141 @@
+.promo {
+  background: rgba(98, 72, 255, 0.1);
+  padding: 100px 0;
+}
+
+.promo-container {
+  max-width: 1440px;
+  margin: 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 133px;
+}
+
+.promo-text {
+  max-width: 585px;
+}
+
+.promo-text h1 {
+  font-size: 64px;
+  line-height: 72px;
+  color: $gray1;
+  padding-bottom: 32px;
+}
+
+.promo-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: $gray2;
+  font-weight: 400;
+  width: 483px;
+  padding-bottom: 48px;
+}
+
+.promo-image img {
+  width: 482px;
+  height: 519px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-size: 16px;
+  padding: 20px 64px;
+  background: $voilet;
+  color: #fff;
+  border-radius: 60px;
+  text-decoration: none;
+  width: 258px;
+  height: 54px;
+  transition: 0.3s;
+}
+
+/*       Responsive        */
+@include respond-to(tablet) {
+  .promo {
+    padding: 24px 0;
+  }
+
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    margin: 0 auto;
+  }
+
+  .promo-text {
+    max-width: 100%;
+  }
+
+  .promo-text h1 {
+    text-align: center;
+    width: 688px;
+  }
+
+  .promo-text p {
+    width: 508px;
+    margin-left: 85px;
+  }
+
+  .promo-image img {
+    width: 100%;
+    max-width: 418px;
+    height: auto;
+  }
+
+  .btn-primary {
+    margin: 0 auto;
+  }
+}
+
+@include respond-to(mobile) {
+  .promo {
+    padding: 32px 0 16px;
+  }
+
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .promo-text {
+    max-width: 100%;
+  }
+
+  .promo-text h1 {
+    text-align: left;
+    font-size: 40px;
+    line-height: 44px;
+    width: 280px;
+    padding-bottom: 24px;
+  }
+
+  .promo-text p {
+    text-align: left;
+    width: 279px;
+    margin: 0;
+    padding-bottom: 32px;
+  }
+
+  .promo-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .promo-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+  }
+}

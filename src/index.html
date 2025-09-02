@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Platform</title>
+
+  <link rel="preload" href="./styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="./styles/styles.css" defer>
+  </noscript>
+    <link rel="preload" href="./scripts/main.js" as="script">
+  <script src="./scripts/main.js" defer></script>
+
+  <link href="https://db.onlinewebfonts.com/c/a294fb387eda4c52a3224aa008dcb2fe?family=Museo+Sans+Cyrl+500+Regular" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/80f19ceeaa4fad006baf230b64f4dac9?family=Museo+Sans+Cyrl+700+Regular" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">LOGO</div>
+
+      <nav class="nav" id="nav">
+        <ul class="menu">
+          <li><a href="#questions">How it works</a></li>
+          <li><a href="#promo">About</a></li>
+          <li><a href="#steps">Instructions</a></li>
+          <li><a href="#testimonials">Accounts</a></li>
+          <li><a href="#">Platforms</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <select class="lang" aria-label="Select language"> 
+          <option value="en">EN</option> 
+          <option value="uk">UA</option> 
+        </select>
+        <a href="#" class="btn-outline">SIGN IN FOR FREE</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+<!-- Trade everywhere -->
+  <section class="promo" id="promo">
+    <div class="promo-container">
+      <div class="promo-text">
+        <h1>Trade everywhere. Invest here!</h1>
+        <p>
+          We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere.  
+        </p>
+        <a href="#" class="btn-primary">START TRADING</a>
+      </div>
+      <div class="promo-image">
+        <img src="./images/graph.png" alt="Trading illustration">
+      </div>
+    </div>
+  </section>
+
+<!-- Getting Started Is Fast & Easy -->
+  <section class="steps" id="steps">
+    <div class="container">
+      <h2 class="title">
+        Getting Started Is
+        <span class="title--h2">Fast &amp; Easy</span>
+      </h2>
+
+      <div class="steps-grid">
+        <article class="card card--1">
+          <div class="idx">01.</div>
+          <h3>Register</h3>
+          <p>Complete the simple registration to get your trading credentials.</p>
+        </article>
+
+        <div class="arrow-wrap arrow-wrap--1">
+          <img src="./images/steps-arrow-r.png" alt="" class="arrow-img-r">
+        </div>
+
+        <article class="card card--2">
+          <div class="idx">02.</div>
+          <h3>Verification</h3>
+          <p>Big Invest is required to verify your identity, upload your documents quickly and get approved in minutes.</p>
+        </article>
+
+        <div class="arrow-wrap arrow-wrap--2">
+          <img src="./images/steps-arrow-l.png" alt="" class="arrow-img-l">
+        </div>
+
+        <article class="card card--3">
+          <div class="idx">03.</div>
+          <h3>Deposit funds</h3>
+          <p>Big Invest accepts credit cards and bank wires. Just use the secure deposit form and follow the steps.</p>
+        </article>
+
+        <div class="arrow-wrap arrow-wrap--3">
+          <img src="./images/steps-arrow-r.png" alt="" class="arrow-img-r">
+        </div>
+
+        <article class="card card--4">
+          <div class="idx">04.</div>
+          <h3>Start Trading</h3>
+          <p>Once your deposit has been credited, you can begin trading instantly. In no time you will see profits rolling into your account.</p>
+        </article>       
+      </div>
+    </div>
+  </section>
+
+<!-- People love Big Invest -->
+  <section class="testimonials" id="testimonials">
+    <div class="content-left">
+      <h2 class="title">
+        People love Big 
+        <span class="title--h2">Invest</span>
+      </h2>
+      <div class="navigation desktop-nav">
+        <button class="arrow-btn" aria-label="Previous testimonial">
+          <img src="./images/arrow-left.png" alt="">
+        </button>
+        <button class="arrow-btn" aria-label="Next testimonial">
+          <img src="./images/arrow-right.png" alt="">
+        </button>
+      </div>
+    </div>
+
+    <div class="content-right">
+      <button class="arrow-btn mobile-btn prev" aria-label="Previous testimonial">
+        <img src="./images/arrow-left.png" alt="">
+      </button>
+
+      <div class="testimonial-card">
+        <div class="author-info">
+          <img src="./images/testimonials_AA.png" alt="Albert Abello" class="author-photo">
+          <div class="author-details">
+            <span class="author-name">Albert Abello</span>
+            <span class="author-title">Director of Growth</span>
+          </div>
+        </div>
+        <div class="testimonial-text">
+          <div class="testimonial-text--quote"></div>
+          <p>
+            This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.
+          </p>
+        </div>
+        <div class="testimonial-pagination">
+          <strong>01 / 04</strong>
+        </div>
+      </div>
+
+      <button class="arrow-btn mobile-btn next" aria-label="Next testimonial">
+        <img src="./images/arrow-right.png" alt="">
+      </button>
+    </div>
+  </section>
+
+<!-- Frequently asked questions -->
+  <section class="questions" id="questions">
+    <h2 class="title">
+        Frequently asked<br>
+        <span class="title--h2">questions</span>
+    </h2>
+
+    <div class="questions-container">
+        <div class="questions-item">
+            <div class="questions-question">
+                <span>How do I change my details?</span>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div class="questions-answer">
+                <p>There should be an answer to the question here.</p>
+            </div>
+        </div>
+
+        <div class="questions-item active">
+            <div class="questions-question">
+                <span>What platforms will I be able to use?</span>
+                <button class="toggle-btn">x</button>
+            </div>
+            <div class="questions-answer">
+                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+            </div>
+        </div>
+
+        <div class="questions-item">
+            <div class="questions-question">
+                <span>How do I change my details?</span>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div class="questions-answer">
+                <p>There should be an answer to the question here.</p>
+            </div>
+        </div>
+
+
+        <div class="questions-item">
+            <div class="questions-question">
+                <span>How do I change my details?</span>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div class="questions-answer">
+                <p>There should be an answer to the question here.</p>
+            </div>
+        </div>
+            
+        <div class="questions-item">
+            <div class="questions-question">
+                <span>How do I change my details?</span>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div class="questions-answer">
+                <p>There should be an answer to the question here.</p>
+            </div>
+        </div>
+
+         <div class="questions-item">
+            <div class="questions-question">
+                <span>How do I change my details?</span>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div class="questions-answer">
+                <p>There should be an answer to the question here.</p>
+            </div>
+        </div>
+
+        <div class="questions-item">
+            <div class="questions-question">
+                <span>How do I change my details?</span>
+                <button class="toggle-btn">+</button>
+            </div>
+            <div class="questions-answer">
+                <p>There should be an answer to the question here.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!-- Contact us! -->
+  <section class="contact" id="contact">
+    <div class="contact-info">
+      <h2 class="title">Contact us!</h2>
+      
+      <p class="contact-info__description">
+        The support staff and customer service are available to help you with any questions or needs you might have.
+      </p>
+      
+      <p class="contact-info__disclaimer">
+        This site is owned and operated by Kodo Tech Solutions LTD
+      </p>
+      
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-item__label">Phone:</span>
+          <span class="contact-item__value">442038857261</span>
+        </div>
+        
+        <div class="contact-item">
+          <span class="contact-item__label">Email:</span>
+          <span class="contact-item__value">help@google.com</span>
+        </div>
+        
+        <div class="contact-item">
+          <span class="contact-item__label">Address:</span>
+          <span class="contact-item__value">
+            Trust Company Complex, Ajeltake Road, Ajeltake Island,<br>
+            Majuro, Republic of the Marshall Islands, MH 96960
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    <form class="contact-form" action="#" method="POST" novalidate>
+      <div class="form-group">
+        <label for="name">Name</label>
+            <input 
+                type="text" 
+                id="name" 
+                class="form-input" 
+                placeholder="Name" 
+                name="name" 
+                minlength="2" 
+                autocomplete="name" 
+                required
+            >
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input 
+            type="email" 
+            id="email" 
+            class="form-input" 
+            placeholder="Email" 
+            name="email" 
+            autocomplete="email" 
+            required
+        >
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea 
+            id="message" 
+            class="form-input form-textarea" 
+            placeholder="Message" 
+            name="message" 
+            minlength="10" 
+            maxlength="500" 
+            required
+            >
+        </textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">SEND</button>
+      <div class="form-success" style="display: none;"></div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">LOGO</div>
+
+      <div class="footer-menu-col">
+        <ul class="menu footer-menu">
+          <li><a href="#questions">How it works</a></li>
+          <li><a href="#promo">About</a></li>
+          <li><a href="#steps">Instructions</a></li>
+          <li><a href="#testimonials">Accounts</a></li>
+          <li><a href="#">Platforms</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-info footer-col">
+        <h4>Information and high risk warning:</h4>
+        <p>Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals carries a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss exposure. Before you decide to trade foreign exchange or contract for differences, carefully consider your investment objectives, experience level, and risk tolerance.</p>
+      </div>
+
+      <div class="footer-legal footer-col">
+        <h4>Legal disclaimer:</h4>
+        <p>Forex trading entails significant risks and is not appropriate for all investors. The possibility of incurring substantial losses should be taken into account. It is therefore important to understand the possible consequences of investing. Traders should weigh their earning potential against the risks involved and act accordingly. Interactive Trade Ltd operating under brand and using domenLink domain within the European Economic Area.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>Copyright 2020, All Right Reserved</div>
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Risk Warnings</a>
+        <a href="#">Anti-Money Laundering</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

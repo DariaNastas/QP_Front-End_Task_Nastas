@@ -1,0 +1,153 @@
+.header-container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 60px 0 120px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+
+.logo {
+  font-family: "Museo Sans Cyrl 700 Regular", sans-serif;
+  font-size: 15px;
+  color: $gray1;
+  margin-right: 20px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0 265px 0 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: $gray1;
+  font-size: 15px;
+}
+
+.actions {
+  display: flex;
+  gap: 24px;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  padding: 10px 16px;
+  border: 1px solid $gray1;
+  border-radius: 60px;
+  font-family: "Museo Sans Cyrl 500 Regular", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 167px;
+  height: 40px;
+  padding: 13px 20px;
+  border-radius: 60px;
+  background: $voilet;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    background: $button-hover;
+  }
+}
+
+.burger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*       Responsive        */
+@include respond-to(tablet) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 0;
+    }
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  .nav,
+  .lang,
+  .logo {
+    display: none;
+  }
+
+  .header-container {
+    margin: 0 auto;
+    padding-right: 32px;
+    gap: 48px;
+  }
+
+  .actions {
+    align-items: center;
+    gap: 48px;
+    margin-left: auto;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@include respond-to(mobile) {
+  .nav,
+  .lang,
+  .actions {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo,
+  .burger {
+    display: block;
+  }
+}

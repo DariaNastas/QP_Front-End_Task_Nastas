@@ -1,0 +1,23 @@
+/* Base button */
+.btn,
+.btn-primary,
+.btn-outline,
+.submit-btn {
+  &:hover:not(:disabled) {
+    background-color: $button-hover;
+    color: #fff;
+  }
+
+  &:active:not(:disabled) {
+    background-color: $button-pressed;
+    color: #fff;
+    transform: translateY(1px);
+  }
+
+  &:disabled {
+    background-color: $button-disabled;
+    color: $gray3;
+    cursor: not-allowed;
+    transform: none;
+  }
+}

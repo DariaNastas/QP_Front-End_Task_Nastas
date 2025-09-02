@@ -1,0 +1,202 @@
+.contact {
+  background: rgba(98, 72, 255, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 132px;
+}
+
+.contact-info {
+  padding: 120px 0 120px 120px;
+  max-width: 1440px;
+  color: $gray2;
+
+  h2 {
+    height: 66px;
+  }
+
+  &__description,
+  &__disclaimer {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    max-width: 483px;
+  }
+
+  &__description {
+    margin: 32px 0 48px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__disclaimer {
+    font-size: 16px;
+    line-height: 27px;
+    padding-bottom: 24px;
+  }
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__label {
+    color: $gray1;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+
+  &__value {
+    color: $gray2;
+    font-size: 16px;
+    line-height: 27px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+}
+
+.contact-form {
+  background: #fff;
+  border: 2px solid $voilet;
+  border-radius: 24px;
+  padding: 80px;
+  margin: 134px 120px 134px 0;
+  width: 585px;
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-input {
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  width: 425px;
+  height: 40px;
+  padding: 7px 0 7px 16px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: $gray3;
+  transition: all 0.3s;
+
+  &::placeholder {
+    color: #9ca3af;
+    font-size: 0.95rem;
+  }
+}
+
+.form-textarea {
+  resize: vertical;
+  height: 89px;
+  font-family: inherit;
+}
+
+.submit-btn {
+  background: $voilet;
+  color: #fff;
+  border: none;
+  border-radius: 60px;
+  padding: 20px 64px;
+  font-size: 16px;
+  font-family: "Museo Sans Cyrl 500 Regular", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3;
+  line-height: 14px;
+  width: 172px;
+  height: 54px;
+  margin: 16px 126px 0;
+}
+
+.form-success {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: $button-hover;
+  border: 1px solid $voilet;
+  border-radius: 4px;
+  color: $gray1;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*       Responsive        */
+@include respond-to(tablet) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 130px;
+  }
+
+  .contact-info {
+    padding: 0;
+    max-width: 508px;
+    margin: 0 auto;
+
+    &__description,
+    &__disclaimer {
+      max-width: 100%;
+      margin: 32px auto 0;
+    }
+  }
+
+  .contact-details {
+    gap: 16px;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    width: 508px;
+    padding: 60px 40px;
+  }
+}
+
+@include respond-to(mobile) {
+  .contact {
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 20px;
+  }
+
+  .contact-info {
+    padding: 0;
+    max-width: 508px;
+    margin: 0 auto;
+
+    &__description,
+    &__disclaimer {
+      max-width: 100%;
+      margin: 32px auto 0;
+    }
+  }
+
+  .contact-details {
+    gap: 16px;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    width: 280px;
+    padding: 48px 16px;
+  }
+
+  .form-input {
+    width: 248px;
+  }
+
+  .submit-btn {
+    margin: 0 36px;
+  }
+}
